@@ -1,54 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Al's Cat Photo Imporium</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
+
   <body>
-  <!-- header with logo and nav bar  -->
     <header>
-
-      <div class="wholeLogo">
-        <h1>Al's Cat Photo Imporium</h1>
-        <img class="logo" src="./media/logo.jpg" alt="Company Logo">
-      </div>
-
-      <nav id="navBar">
-        <ul class="navList">
-          <li><a href="#">Cat Photo Store</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Search</a></li>
-        </ul>
+<!-- navigation bar html -->
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <span class="glyphicon-camera glyphicon"></span>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About Me</a></li>
+              <li><a href="#cnav">Portfolio</a></li>
+              <li><a href="#contacts">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
+<!-- photo part of header -->
+      <div class="jumbotron">
+        <h1>Wilymon Studio <span class="glyphicon-camera glyphicon"></span></h1>
+        <p>Professional iPhone Photography</p>
+      </div>
+    </div>
     </header>
-  <!-- main with section for the cat photo gallery -->
-  <main>
-    <h2>Cat Photo Store</h2>
-    <section>
-      <ul class="catList">
-        <li><a href="./media/kitty_derp.jpg"><img class="catGallery" src="./media/kitty_derp.jpg" alt="cat with tongue out"></a><h3 class="galleryText">Cat is a Derp - $40</h3></li>
-        <li><a href="./media/kitty_bday.jpg"><img class="catGallery" src="./media/kitty_bday.jpg" alt="cat in birthday hat"></a><h3 class="galleryText">Cat Birthday - $20</h3></li>
-        <li><a href="./media/kitty_potter.jpg"><img class="catGallery" src="./media/kitty_potter.jpg" alt="cat in Harry Potter costume"></a><h3 class="galleryText">Kitty Potter - $40</h3></li>
-        <li><a href="./media/kitty_shinning.jpg"><img class="catGallery" src="./media/kitty_shinning.jpg" alt="cat in The Shinning impression"></a><h3 class="galleryText">Here's Kitty! - $45</h3></li>
-        <li><a href="./media/kitty_red.jpg"><img class="catGallery" src="./media/kitty_red.jpg" alt="cat in Little Red Ridding Hood costume"></a><h3 class="galleryText">Kitty Red - $100</h3></li>
-        <li><a href="./media/kitty_chill.jpg"><img class="catGallery" src="./media/kitty_chill.jpg" alt="cat in sun glasses"></a><h3 class="galleryText">Cool Cat - $20</h3></li>
-        <li><a href="./media/kitty_duck.jpg"><img class="catGallery" src="./media/kitty_duck.jpg" alt="cat with toy duck"></a><h3 class="galleryText">Kitty w/ Duck - $40</h3></li>
-        <li><a href="./media/kitty_legs.jpg"><img class="catGallery" src="./media/kitty_legs.jpg" alt="cat with sexy legs"></a><h3 class="galleryText">Sexy Kitty - $700</h3></li>
-        <li><a href="./media/kitty_hat.jpg"><img class="catGallery" src="./media/kitty_hat.jpg" alt="cat with paper hat"></a><h3 class="galleryText">Cat Hat - $60</h3></li>
-        <li><a href="./media/kitty_boss.jpg"><img class="catGallery" src="./media/kitty_boss.jpg" alt="cat with coffee mug"></a><h3 class="galleryText">Cat is a Boss - $40</h3></li>
-        <li><a href="./media/kitty_sad.jpg"><img class="catGallery" src="./media/kitty_sad.jpg" alt="cat sad with birthday cake"></a><h3 class="galleryText">Cat Sadness - $500</h3></li>
-      </ul>
-    </section>
-  </main>
-  <!-- simple footer -->
 
-  <footer>
-    <h3>&copy; Wilymon Productions</h3>
-  </footer>
 
+
+<!-- carousel html -->
+    <div class="carousel slide" data-ride="carousel" id="cnav">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="media/one.jpg" alt="snail">
+        </div>
+        <div class="item">
+          <img src="media/two.jpg" alt="man smiling">
+        </div>
+        <div class="item">
+          <img src="media/three.jpg" alt="two silhouettes">
+        </div>
+        <div class="item">
+          <img src="media/four.jpg" alt="woman in front of rock climbing walls">
+        </div>
+        <div class="item">
+          <img src="media/five.jpg" alt="geese">
+        </div>
+        <div class="item">
+          <img src="media/six.jpg" alt="dog">
+        </div>
+        <div class="item">
+          <img src="media/seven.jpg" alt="couple at wedding">
+        </div>
+      </div>
+      <a href="#cnav" role="button" data-slide="prev" class="left carousel-control">
+      <span class="glyphicon-chevron-left glyphicon"></span>
+      </a>
+      <a href="#cnav" role="button" data-slide="next" class="right carousel-control">
+      <span class="glyphicon-chevron-right glyphicon"></span>
+      </a>
+    </div>
+
+<!-- footer html, and the only opportunity I had to use flexbox, per assignment -->
+    <footer id="contacts">
+      <section class="navbar navbar-inverse">
+        <h3>Social Media</h3>
+          <div class="mediaLinks">
+            <button type="button" class="btn btn-link"><a href="#">Facebook</a></button>
+            <button type="button" class="btn btn-link"><a href="#">Instagram</a></button>
+            <button type="button" class="btn btn-link"><a href="#">Twitter</a></button>
+          </div>
+      </section>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
-</html>
+</html

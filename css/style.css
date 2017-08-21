@@ -1,92 +1,44 @@
-/*body text is coded out because it breaks responsive design*/
-
-/*body {
-  margin: 0 auto;
-  width: 900px;
-}*/
-
-html {
-  background-color: black;
+/*global css*/
+body {
+  background-color: #646464;
 }
 
-a:hover {
-  color: darkgreen;
+/*header css*/
+.jumbotron {
+  background-image: url("../media/butter.jpg");
+  background-size: cover;
+  color: white;
+  height: 300px;
+  margin-bottom: 0px;
+  text-align: center;
+  transition: all .2s ease-in-out;
 }
-
-/*code for top logo bar*/
-
+.jumbotron:hover {
+  transform: scale(1.1);
+}
+.navbar {
+  margin-bottom: 0px;
+  z-index: 1;
+}
 .logo {
-  width: 200px;
-  border-radius: 50%;
-  margin-top: 10px;
-  border: 1px solid black;
+  width: 40px;
+}
+h1, p {
+  background-color: rgba(0,0,0,0.5);
 }
 h1 {
-  font-size: 250%;
-  color: white;
-  text-shadow: 2px 2px black;
-  text-align: center;
-}
-.wholeLogo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("../media/banner.jpg");
-  padding: 20px 0px;
-  flex-wrap: wrap;
+  margin-bottom: 0px;
 }
 
-
-/*nav bar code*/
-
-#navBar ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-#navBar {
-  background-color: silver;
-  padding: 5px 0px;
-  border: 2px solid darkgrey;
-}
-
-/*cat gallery code */
-
-h2 {
-  text-align: center;
-  font-size: 200%;
-}
-main {
-  background-color: white;
-  padding: 50px 0;
-  margin: 0 30px;
-}
+/*footer css*/
 section {
-  padding-top: 30px;
+  padding-bottom: 10px;
 }
-.galleryText {
+h3 {
   text-align: center;
 }
-.catGallery {
-  width: 200px;
-  border-radius: 25px;
-  margin: 10px;
-  box-shadow: 3px 3px 10px #888888;
-}
-.catList {
+.mediaLinks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-/*footer code */
-
-footer {
-  background-color: purple;
-  padding: 10px 0px;
-}
-footer h3 {
-  text-align: center;
-  color: white;
+  justify-content: space-around;
 }
