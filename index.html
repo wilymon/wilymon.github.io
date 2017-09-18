@@ -1,101 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Portfolio</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-
-  <body>
-    <header>
-<!-- navigation bar html -->
-      <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <span class="glyphicon-camera glyphicon"></span>
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#cnav">Portfolio</a></li>
-              <li><a href="#contacts">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-<!-- photo part of header -->
-      <div class="jumbotron">
-        <h1>Wilymon Studio <span class="glyphicon-camera glyphicon"></span></h1>
-        <p>Professional iPhone Photography</p>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towers of Hanoi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animate.css" />
+</head>
+<body>
+  <h1 id="announce">HARRY CARAY'S TOWERS OF HANOI</h1>
+  <header>
+    <img class="animated bounceIn" id="Caray" src="Media/default.png" alt="Harry Caray">
+    <div id="scoreboard" class="scoreboard">
+      <div id="moves" class="moves">
+        20
+      </div>
+      <div id="moveText">
+        MOVES LEFT
       </div>
     </div>
-    </header>
-
-
-
-<!-- carousel html -->
-    <div class="carousel slide" data-ride="carousel" id="cnav">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="media/one.jpg" alt="snail">
-        </div>
-        <div class="item">
-          <img src="media/two.jpg" alt="man smiling">
-        </div>
-        <div class="item">
-          <img src="media/three.jpg" alt="two silhouettes">
-        </div>
-        <div class="item">
-          <img src="media/four.jpg" alt="woman in front of rock climbing walls">
-        </div>
-        <div class="item">
-          <img src="media/five.jpg" alt="geese">
-        </div>
-        <div class="item">
-          <img src="media/six.jpg" alt="dog">
-        </div>
-        <div class="item">
-          <img src="media/seven.jpg" alt="couple at wedding">
-        </div>
-      </div>
-      <a href="#cnav" role="button" data-slide="prev" class="left carousel-control">
-      <span class="glyphicon-chevron-left glyphicon"></span>
-      </a>
-      <a href="#cnav" role="button" data-slide="next" class="right carousel-control">
-      <span class="glyphicon-chevron-right glyphicon"></span>
-      </a>
+  </header>
+  <div id="Game">
+    <div id="colOne" data-stack="1">
+      <div class="block" data-block="100"></div>
+      <div class="block" data-block="75"></div>
+      <div class="block" data-block="50"></div>
+      <div class="block" data-block="25"></div>
     </div>
-
-<!-- footer html, and the only opportunity I had to use flexbox, per assignment -->
-    <footer id="contacts">
-      <section class="navbar navbar-inverse">
-        <h3>Social Media</h3>
-          <div class="mediaLinks">
-            <button type="button" class="btn btn-link"><a href="#">Facebook</a></button>
-            <button type="button" class="btn btn-link"><a href="#">Instagram</a></button>
-            <button type="button" class="btn btn-link"><a href="#">Twitter</a></button>
-          </div>
-      </section>
-    </footer>
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
-</html
+    <div id="colTwo" data-stack="2">
+    </div>
+    <div id="colThree" data-stack="3">
+    </div>
+  </div>
+  <div id="buttons">
+    <button class="btn" id="button1"> > </button>
+    <button class="btn" id="button1b"> >> </button>
+    <button class="btn" id="button2a"> < </button>
+    <button class="btn" id="button2b"> > </button>
+    <button class="btn" id="button3b"> << </button>
+    <button class="btn" id="button3"> < </button>
+  </div>
+  <div id="reset">
+    <button class="reset" id="buttonReset">Reset Game</button>
+  </div>
+  <audio src="Media/Intro.mp3" id="audio" autoplay>
+  </audio>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="jquery.confetti.js"></script>
+</body>
+</html>
